@@ -1,0 +1,3 @@
+type LoadingState = {
+	isPageLoading: boolean;
+};
