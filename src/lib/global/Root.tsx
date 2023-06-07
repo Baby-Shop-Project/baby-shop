@@ -25,19 +25,17 @@ export const Root = () => {
 
 	return (
 		<>
-			<Column className={joinCls("relative h-screen", isPageLoading || !isStartedSplash ? "invisible" : undefined)}>
+			<Column className={joinCls("relative h-full", isPageLoading || !isStartedSplash ? "invisible" : undefined)}>
 				{/* Navigation bar */}
-				<Navigator className="fixed top-0 left-0 w-full" />
+				<Navigator className="w-full" />
 
 				{/* Notification will show here */}
 				{/* <Alert className="fixed top-16 left-0 w-full" /> */}
 
-				<div className="grow pt-16">
-					<AppSuspense>
-						{/* Page will render here */}
-						<Outlet />
-					</AppSuspense>
-				</div>
+				<AppSuspense>
+					{/* Page will render here */}
+					<Outlet />
+				</AppSuspense>
 			</Column>
 
 			{/* Splash */}

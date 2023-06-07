@@ -1,6 +1,6 @@
 import { ROOT, Root } from "@global";
+import { ErrorPage } from "@pages/Error";
 import { myAccountRoute, resetPasswordRoute } from "@pages/authentication.group";
-import { ErrorPage } from "@pages/error";
 import { homeRoute } from "@pages/home";
 import { createBrowserRouter } from "react-router-dom";
 

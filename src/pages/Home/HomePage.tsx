@@ -34,7 +34,6 @@ export const HomePage = ({}: HomePageProps) => {
 					</Row>
 				</div>
 			</section>
-
 			<section className="relative mt-16">
 				<Row className="justify-between items-center">
 					<H1 className="text-dark">Shop The Latest</H1>
@@ -47,8 +46,7 @@ export const HomePage = ({}: HomePageProps) => {
 					))}
 				</Grid>
 			</section>
-
-			<Footer className="mt-52" />
+			{/* <Footer className="mt-52" /> */}
 		</div>
 	);
 };
